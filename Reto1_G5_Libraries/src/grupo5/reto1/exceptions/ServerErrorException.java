@@ -1,4 +1,4 @@
-package exceptions;
+package grupo5.reto1.exceptions;
 
 
 
@@ -12,22 +12,22 @@ package exceptions;
  *
  * @author Ian.
  */
-public class UserAlreadyExistsException extends Exception {
+public class ServerErrorException extends Exception {
 
     /**
-     * Creates a new instance of <code>UsuarioYaExiste</code> without detail
+     * Creates a new instance of <code>ErrorDeServidor</code> without detail
      * message.
      */
-    public UserAlreadyExistsException() {
+    public ServerErrorException() {
     }
 
     /**
-     * Constructs an instance of <code>UsuarioYaExiste</code> with the specified
+     * Constructs an instance of <code>ErrorDeServidor</code> with the specified
      * detail message.
      *
      * @param msg the detail message.
      */
-    public UserAlreadyExistsException(String msg) {
+    public ServerErrorException(String msg) {
         super(msg);
     }
 }

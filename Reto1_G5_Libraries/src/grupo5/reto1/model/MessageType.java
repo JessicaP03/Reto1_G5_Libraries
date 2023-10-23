@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package grupo5.reto1.model;
 
 /**
  *This enum class is used to asign all the type of messages 

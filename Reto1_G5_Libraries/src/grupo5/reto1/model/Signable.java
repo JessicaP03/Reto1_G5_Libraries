@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package grupo5.reto1.model;
 
-import exceptions.CredentialErrorException;
-import exceptions.ServerErrorException;
-import exceptions.UserAlreadyExistsException;
-import exceptions.UserNotFoundException;
+import grupo5.reto1.exceptions.CredentialErrorException;
+import grupo5.reto1.exceptions.ServerErrorException;
+import grupo5.reto1.exceptions.UserAlreadyExistsException;
+import grupo5.reto1.exceptions.UserNotFoundException;
 
 
 

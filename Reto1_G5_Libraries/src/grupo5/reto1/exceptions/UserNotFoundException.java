@@ -1,4 +1,4 @@
-package exceptions;
+package grupo5.reto1.exceptions;
 
 
 
