@@ -19,40 +19,39 @@ import java.time.LocalDate;
  */
 public class User implements Serializable{
     
-    private String nombreCompleto;
+    private String name;
     private String email;
-    private String direccion;
-    private String contrasena;
-    private int telefono;
+    private String address;
+    private String passwd;
+     private String passwd2;
+    private int phone;
     private int codigoPostal;
     private LocalDate createDate;
     private LocalDate writeDate;
     private Boolean activo;
-    private int compania;
+    private int company;
     //private UserType type;
 
-    
-    public User(String nombreCompleto, String email, String direccion, String contrasena, int telefono, int codigoPostal, LocalDate createDate, LocalDate writeDate, Boolean activo, int compania) {
-        this.nombreCompleto = nombreCompleto;
+    public User(String name, String email, String address, String passwd, String passwd2, int phone, int codigoPostal, LocalDate createDate, LocalDate writeDate, Boolean activo, int company) {
+        this.name = name;
         this.email = email;
-        this.direccion = direccion;
-        this.contrasena = contrasena;
-        this.telefono = telefono;
+        this.address = address;
+        this.passwd = passwd;
+        this.passwd2 = passwd2;
+        this.phone = phone;
         this.codigoPostal = codigoPostal;
         this.createDate = LocalDate.now();
         this.writeDate = LocalDate.now();
         this.activo = true;
-        this.compania = 1;
+        this.company = 1;
     }
 
-    
-
-    public String getNombreCompleto() {
-        return nombreCompleto;
+    public String getName() {
+        return name;
     }
 
-    public void setNombreCompleto(String nombreCompleto) {
-        this.nombreCompleto = nombreCompleto;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getEmail() {
@@ -63,28 +62,36 @@ public class User implements Serializable{
         this.email = email;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getAddress() {
+        return address;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setAddres(String address) {
+        this.address = address;
     }
 
-    public String getContrasena() {
-        return contrasena;
+    public String getPasswd() {
+        return passwd;
     }
 
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
+    public void setPasswd(String passwd) {
+        this.passwd = passwd;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public String getPasswd2() {
+        return passwd2;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setPasswd2(String passwd2) {
+        this.passwd2 = passwd2;
+    }
+
+    public int getPhone() {
+        return phone;
+    }
+
+    public void setPhone(int phone) {
+        this.phone = phone;
     }
 
     public int getCodigoPostal() {
@@ -119,14 +126,15 @@ public class User implements Serializable{
         this.activo = activo;
     }
 
-    public int getCompania() {
-        return compania;
+    public int getCompany() {
+        return company;
     }
 
-    public void setCompania(int compania) {
-        this.compania = compania;
+    public void setCompany(int company) {
+        this.company = company;
     }
+
     
-       
+   
     
 }
