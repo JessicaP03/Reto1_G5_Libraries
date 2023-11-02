@@ -6,17 +6,20 @@
 package model;
 
 import exceptions.CredentialErrorException;
+import exceptions.InsertErrorException;
 import exceptions.ServerErrorException;
 import exceptions.UserAlreadyExistsException;
 import exceptions.UserNotFoundException;
 
-
-
 /**
- *This interface is used to instance the parameters wich are get on our SignIn and SignUp windows
+ * This interface is used to instance the parameters wich are get on our SignIn
+ * and SignUp windows
+ *
  * @author Jessica
  */
 public interface Signable {
-    public User getExecuteSignUp(User user) throws UserAlreadyExistsException, UserNotFoundException, ServerErrorException;
+
+    public User getExecuteSignUp(User user) throws UserAlreadyExistsException, UserNotFoundException, ServerErrorException, InsertErrorException;
+
     public User getExecuteSignIn(User user) throws ServerErrorException, CredentialErrorException;
 }
