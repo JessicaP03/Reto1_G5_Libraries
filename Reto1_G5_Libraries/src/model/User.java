@@ -1,4 +1,3 @@
-
 package model;
 
 import java.io.Serializable;
@@ -6,6 +5,7 @@ import java.time.LocalDate;
 
 /**
  * En esta clase se guardan temporalmente todos los datos de un usuario.
+ *
  * @author Ian.
  */
 public class User implements Serializable {
@@ -21,7 +21,6 @@ public class User implements Serializable {
     private LocalDate writeDate;
     private Boolean activo;
     private int company;
-    
 
     public User() {
     }
@@ -60,7 +59,7 @@ public class User implements Serializable {
         return address;
     }
 
-    public void setAddres(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
