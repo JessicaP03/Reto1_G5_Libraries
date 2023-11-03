@@ -5,9 +5,6 @@
  */
 package model;
 
-
-
-
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -17,13 +14,12 @@ import java.time.LocalDate;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Ian.
  */
-public class User implements Serializable{
-    
+public class User implements Serializable {
+
     private String name;
     private String email;
     private String address;
@@ -36,6 +32,9 @@ public class User implements Serializable{
     private Boolean activo;
     private int company;
     //private UserType type;
+
+    public User() {
+    }
 
     public User(String name, String email, String address, String passwd, String passwd2, int phone, int zip, LocalDate createDate, LocalDate writeDate, Boolean activo, int company) {
         this.name = name;
@@ -139,7 +138,4 @@ public class User implements Serializable{
         this.company = company;
     }
 
-    
-   
-    
 }
