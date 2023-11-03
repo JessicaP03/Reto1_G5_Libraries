@@ -7,6 +7,7 @@ package model;
 
 import exceptions.CredentialErrorException;
 import exceptions.InsertErrorException;
+import exceptions.SelectErrorException;
 import exceptions.ServerErrorException;
 import exceptions.UserAlreadyExistsException;
 import exceptions.UserNotFoundException;
