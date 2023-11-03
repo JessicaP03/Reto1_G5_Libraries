@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * Excepción por si un usuario no se encuentra.
  * @author Ian.
  */
 public class UserNotFoundException extends Exception {

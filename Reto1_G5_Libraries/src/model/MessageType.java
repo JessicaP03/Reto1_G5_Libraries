@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model;
 
 /**
- * This enum class is used to asign all the type of messages
+ * Esta clase es una enumeración para asignar todos los tipos de mensaje que pueden llegar a salir.
  *
  * @author Jessica
  */

@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * Excepción para usuari ya existente.
  * @author Ian.
  */
 public class UserAlreadyExistsException extends Exception {
