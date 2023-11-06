@@ -23,6 +23,10 @@ public class User implements Serializable {
     private int company;
 
     public User() {
+        this.createDate = LocalDate.now();
+        this.writeDate = LocalDate.now();
+        this.activo = true;
+        this.company = 1;
     }
 
     public User(String name, String email, String address, String passwd, String passwd2, int phone, int zip, LocalDate createDate, LocalDate writeDate, Boolean activo, int company) {
@@ -37,6 +41,11 @@ public class User implements Serializable {
         this.writeDate = LocalDate.now();
         this.activo = true;
         this.company = 1;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", email=" + email + ", address=" + address + ", passwd=" + passwd + ", passwd2=" + passwd2 + ", phone=" + phone + ", zip=" + zip + ", createDate=" + createDate + ", writeDate=" + writeDate + ", activo=" + activo + ", company=" + company + '}';
     }
 
     public String getName() {
