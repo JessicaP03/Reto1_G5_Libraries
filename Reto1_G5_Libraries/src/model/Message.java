@@ -1,4 +1,3 @@
-
 package model;
 
 import java.io.Serializable;
@@ -10,15 +9,11 @@ import java.io.Serializable;
  */
 public class Message implements Serializable {
 
-    
-    //atributos
-    
+    //Atributos
     private MessageType messageType;
     private User user;
 
-    
-    //constructores
-    
+    //Constructores
     public Message() {
     }
 
@@ -27,9 +22,7 @@ public class Message implements Serializable {
         this.user = user;
     }
 
-    
-    //getters y setters
-    
+    //Getters y Setters
     public void setMessageType(MessageType messageType) {
         this.messageType = messageType;
     }

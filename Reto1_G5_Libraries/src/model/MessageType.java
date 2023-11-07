@@ -1,10 +1,10 @@
-
 package model;
 
 /**
- * Esta clase es una enumeración para asignar todos los tipos de mensaje que pueden llegar a salir.
+ * Esta clase es una enumeración para asignar todos los tipos de mensaje que
+ * pueden llegar a salir.
  *
- * @author Jessica
+ * @author Jessica.
  */
 public enum MessageType {
     SIGNIN_REQUEST,
@@ -16,5 +16,6 @@ public enum MessageType {
     ERROR_RESPONSE,
     MAX_USERS_CONECTED,
     SERVER_ERROR,
-    CREDENTIAL_ERROR;
+    CREDENTIAL_ERROR,
+    INSERT_ERROR_RESPONSE;
 }

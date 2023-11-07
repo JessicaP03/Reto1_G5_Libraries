@@ -1,8 +1,8 @@
-
 package exceptions;
 
 /**
  * Excepción de inserción de datos en la base de datos.
+ *
  * @author Ian.
  */
 public class InsertErrorException extends Exception {
