@@ -1,10 +1,8 @@
 package model;
 
 import exceptions.CredentialErrorException;
-import exceptions.InsertErrorException;
 import exceptions.ServerErrorException;
 import exceptions.UserAlreadyExistsException;
-import exceptions.UserNotFoundException;
 
 /**
  * Esta interfaz se utiliza para instanciar los parámetros que se obtienen en
@@ -19,15 +17,14 @@ public interface Signable {
      *
      * @param user un objeto con los datos que queremos insertar.
      * @return un objeto usuario
-     * @throws UserAlreadyExistsException una excepción que gestiona si un
-     * usuario ya existe en la base de datos.
-     * @throws UserNotFoundException una excepción que gestiona si un usuario no
-     * se encuentra en la base de datos.
      * @throws ServerErrorException una excepción que gestiona si hay un error
      * en el servidor.
-     * @throws InsertErrorException
+     * @throws UserAlreadyExistsException una excepción que gestiona si un
+     * usuario ya existe en la base de datos.
+     * @throws CredentialErrorException gestiona una excepción por si el email y
+     * la contraseña no coinciden.
      */
-    public User getExecuteSignUp(User user) throws UserAlreadyExistsException, UserNotFoundException, ServerErrorException, InsertErrorException;
+    public User getExecuteSignUp(User user) throws ServerErrorException, UserAlreadyExistsException, CredentialErrorException;
 
     /**
      * Busca un usuario en la base de datos de odoo que tenga el email y
@@ -40,6 +37,8 @@ public interface Signable {
      * en el servidor.
      * @throws CredentialErrorException gestiona una excepción por si el email y
      * la contraseña no coinciden.
+     * @throws UserAlreadyExistsException una excepción que gestiona si un
+     * usuario ya existe en la base de datos.
      */
-    public User getExecuteSignIn(User user) throws ServerErrorException, CredentialErrorException;
+    public User getExecuteSignIn(User user) throws ServerErrorException, CredentialErrorException, UserAlreadyExistsException;
 }
