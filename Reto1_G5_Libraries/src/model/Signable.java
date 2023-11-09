@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package model;
 
 import exceptions.CredentialErrorException;
@@ -12,8 +8,8 @@ import exceptions.UserAlreadyExistsException;
 import exceptions.UserNotFoundException;
 
 /**
- * This interface is used to instance the parameters wich are get on our SignIn
- * and SignUp windows
+ * Esta interfaz se utiliza para instanciar los parámetros que se 
+ * obtienen en nuestras ventanas de inicio de sesión y registro.
  *
  * @author Jessica
  */

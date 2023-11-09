@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * Excepción de error de credenciales cuando se inicia sesión.
  * @author Ian.
  */
 public class CredentialErrorException extends Exception {

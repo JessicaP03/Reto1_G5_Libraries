@@ -1,20 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
+ * En esta clase se guardan temporalmente todos los datos de un usuario.
  *
  * @author Ian.
  */
@@ -31,7 +21,6 @@ public class User implements Serializable {
     private LocalDate writeDate;
     private Boolean activo;
     private int company;
-    //private UserType type;
 
     public User() {
     }
@@ -70,7 +59,7 @@ public class User implements Serializable {
         return address;
     }
 
-    public void setAddres(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
