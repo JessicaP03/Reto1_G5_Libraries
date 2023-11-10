@@ -1,6 +1,7 @@
 package exceptions;
 
 /**
+ * Excepción para usuario ya existente.
  *
  * @author Ian.
  */

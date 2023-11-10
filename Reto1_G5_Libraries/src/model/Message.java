@@ -1,28 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 import java.io.Serializable;
 
 /**
- * This class is used to track the type of message and the user
+ * Esta clase permite encapsular un usuario y un tipo de mensaje.
  *
  * @author Jessica
  */
 public class Message implements Serializable {
 
-    /*
-    atributes
-     */
+    //Atributos
     private MessageType messageType;
     private User user;
 
-    /*
-    constructors
-     */
+    //Constructores
     public Message() {
     }
 
@@ -31,9 +22,7 @@ public class Message implements Serializable {
         this.user = user;
     }
 
-    /*
-    getters and setters
-     */
+    //Getters y Setters
     public void setMessageType(MessageType messageType) {
         this.messageType = messageType;
     }

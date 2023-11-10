@@ -1,54 +1,51 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
-
-
-
 
 import java.io.Serializable;
 import java.time.LocalDate;
 
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
+ * En esta clase se guardan temporalmente todos los datos de un usuario.
  *
  * @author Ian.
  */
-public class User implements Serializable{
-    
+public class User implements Serializable {
+
     private String name;
     private String email;
     private String address;
     private String passwd;
-     private String passwd2;
+    private String passwd2;
     private int phone;
-    private int codigoPostal;
+    private int zip;
     private LocalDate createDate;
     private LocalDate writeDate;
     private Boolean activo;
     private int company;
-    //private UserType type;
 
-    public User(String name, String email, String address, String passwd, String passwd2, int phone, int codigoPostal, LocalDate createDate, LocalDate writeDate, Boolean activo, int company) {
+    public User() {
+        this.createDate = LocalDate.now();
+        this.writeDate = LocalDate.now();
+        this.activo = true;
+        this.company = 1;
+    }
+
+    public User(String name, String email, String address, String passwd, String passwd2, int phone, int zip, LocalDate createDate, LocalDate writeDate, Boolean activo, int company) {
         this.name = name;
         this.email = email;
         this.address = address;
         this.passwd = passwd;
         this.passwd2 = passwd2;
         this.phone = phone;
-        this.codigoPostal = codigoPostal;
+        this.zip = zip;
         this.createDate = LocalDate.now();
         this.writeDate = LocalDate.now();
         this.activo = true;
         this.company = 1;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", email=" + email + ", address=" + address + ", passwd=" + passwd + ", passwd2=" + passwd2 + ", phone=" + phone + ", zip=" + zip + ", createDate=" + createDate + ", writeDate=" + writeDate + ", activo=" + activo + ", company=" + company + '}';
     }
 
     public String getName() {
@@ -71,7 +68,7 @@ public class User implements Serializable{
         return address;
     }
 
-    public void setAddres(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 
@@ -99,12 +96,12 @@ public class User implements Serializable{
         this.phone = phone;
     }
 
-    public int getCodigoPostal() {
-        return codigoPostal;
+    public int getZip() {
+        return zip;
     }
 
-    public void setCodigoPostal(int codigoPostal) {
-        this.codigoPostal = codigoPostal;
+    public void setZip(int zip) {
+        this.zip = zip;
     }
 
     public LocalDate getCreateDate() {
@@ -139,7 +136,4 @@ public class User implements Serializable{
         this.company = company;
     }
 
-    
-   
-    
 }

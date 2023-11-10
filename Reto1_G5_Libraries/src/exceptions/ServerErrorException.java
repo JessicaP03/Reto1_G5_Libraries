@@ -1,7 +1,7 @@
 package exceptions;
 
 /**
- *
+ * Excepción para error en el servidor.
  * @author Ian.
  */
 public class ServerErrorException extends Exception {
